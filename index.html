@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Component Library </title>
+    <link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
     <h1>Mansi's Component Library</h1>
@@ -25,27 +26,28 @@
     <h2>@Container</h2>
 
     <h3>Fluid container</h3>
-    <div>This is a fluid container and it will go till the end of the page.</div>
+    <div class="container">This is a fluid container and it will go till the end of the page.</div>
 
     <h3>Center container</h3>
-    <div>This is a Center container and it will go till the specified width.</div>
+    <div class="container container-center"> This is a Center container and it will go till the specified width.</div>
 
     <hr>
 
     <h2>@Links</h2>
 
-    <a href="www.google.com">Search on Google</a>
+    <a class="link" href="www.google.com">Search on Google</a>
 
-    <a href="/">Primary Link</a>
-    <a href="/">Secondary Link</a>
-
+    <a class="link link-primary" href="/">Primary Link</a>
+    <a class="link link-secondary" href="/">Secondary Link</a>
+ 
     <hr>
 
     <h2>@List</h2>
 
     <h3>unordered list</h3>
+    <p>This list will not have bullet</p>
 
-    <ul>
+    <ul class="list-non-bullet">
         <li>item1</li>
         <li>item2</li>
         <li>item3</li>
@@ -53,10 +55,10 @@
 
     <h3>unordered inline list</h3>
 
-    <ul>
-        <li>inline item1</li>
-        <li>inline item2</li>
-        <li>inline item3</li>
+    <ul class="list-non-bullet">
+        <li class="list-item-inline">inline item1</li>
+        <li class="list-item-inline">inline item2</li>
+        <li class="list-item-inline">inline item3</li>
     </ul>
 
     <h4>Ordered List</h4>
@@ -77,17 +79,17 @@
 
     <h2>@Nav</h2>
 
-    <nav>
-        <div>iAmBrand</div>
-        <ul>
-            <li>
-                <a href="/">Home</a>
+    <nav class="nav-bar">
+        <div class="nav-brand">iAmBrand</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link" href="/">Home</a>
             </li>
-            <li>
-                <a href="/">products</a>
+            <li class="list-item-inline">
+                <a class="link" href="/">products</a>
             </li>
-            <li>
-                <a href="/">about</a>
+            <li class="list-item-inline">
+                <a class="link" href="/">about</a>
             </li>
         </ul>
     </nav>
@@ -96,34 +98,41 @@
 
     <h2>@Header</h2>
 
-    <header>
-        <img src="assest/hero.svg"/>
-        <h1>Heading inside hero</h1>
+    <header class="hero">
+        <img class="hero-img" src="assest/hero.svg"/>
+        <h1 class="hero-heading">Heading inside hero <span class="heading-inverted">| another heading </span></h1>
     </header>
 
     <hr>
 
     <h2>@Section</h2>
-    <section>
-        <h3>white section</h3>
-        <p>This will have white background</p>
+    <section class="section">
+        <div class="container container-center">
+            <h3>white section</h3>
+            <p>An excellent resource for aspiring web developers — Learn JavaScript in an interactive environment, with short lessons and interactive tests, guided by automated assessment. The first 40 lessons are free, and the complete course is available for a small one-time payment.</p>
+
+        </div>
+        
     </section>
 
-    <section>
-        <h3>off white section</h3>
-        <p>This will have gray background</p>
-    </section>
+    <section class="section section-off-white">
+        <div class="container container-center">
+            <h3>off white section</h3>
+            <p>An excellent resource for aspiring web developers — Learn JavaScript in an interactive environment, with short lessons and interactive tests, guided by automated assessment. The first 40 lessons are free, and the complete course is available for a small one-time payment.</p>
+
+        </div>
+        </section>
 
     <hr>
 
     <h2>@Footer</h2>
 
-    <footer>
-        <div>Some Small heading inside footer</div>
-        <ul>
-            <li><a href="/">socialone</a></li>
-            <li><a href="/">socialtwo</a></li>
-            <li><a href="/">socialthree</a></li>
+    <footer class="footer">
+        <div class="footer-header">Some small heading or social links inside footer</div>
+        <ul class="list-non-bullet">
+            <li class="list-item-inline"><a class="link" href="/">socialone</a></li>
+            <li class="list-item-inline" ><a class="link" href="/">socialtwo</a></li>
+            <li class="list-item-inline" ><a class="link" href="/">socialthree</a></li>
         </ul>
     </footer>
 
